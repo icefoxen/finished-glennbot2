@@ -1,0 +1,77 @@
+INFRASTRUCTURE:
+Make commands via PM work right (make generalized message formatter/handler)
+Have him post logs to website or kd8 at the end of every day.  
+Properly handle NickServ's
+
+COMMAND LIST:
+new list
+print list
+edit list 
+
+memo (with notification)
+kill
+kill ... with ...
+please kill ...
+new murder
+new weapon
+roll
+name
+poke
+word of the day
+prolog interpreter
+apl/j interpreter
+make sure it's able to kill said interpreters
+topic changer
+cookie/hug
+choice, a la flyingferret.  "cake or death"
+emo
+
+
+COMMAND REF:
+ALL CAPS is a keyword, lowercase is arguments, [] is optional
+Keywords can be synonyms.  For instance, kill, murder and annihilate can all
+be synonyms for kill.
+
+MEMO FOR name text
+
+[PLEASE] KILL [name] [WITH weapon]
+
+NEW LIST name
+
+ADD LIST name item
+ADD item TO LIST name
+
+SHOW LIST name
+
+
+
+
+
+Parsing should be flexible and look for certain keywords, but not require
+all of them.  For instance, you could say "George, pmbomb 5" to get the last
+5 messages from the channel, or you could say "George, pmbomb me 5" or "George, pmbomb Starfyre the last 5" or "George, pmbomb the last 5 from Starfyre"...
+
+
+
+A good feature:
+Have you able to request that George plays back the last few things in his
+buffer at you via PM.  Useful for PM-bombing after getting DC'd or such.
+
+Notify people that they have messages when they enter the channel.
+
+Possibly garble messages a bit now and then, but keep the original around so
+the full version can be recovered
+
+
+Make high- or low-priority commands.  High: Logging, messages, etc.  Low:
+kills, etc.  Make it occasionally refuse to do low-priority commands.
+
+
+Feature request: Prolog interpreter.
+Caveat: Also needs an APL or J interpreter, just to fuck with Mjolnir.
+Also maybe Python.  And while we're at it, Scheme, Forth, OCaml...
+The way to do this is to make a generalized program-linking interface, and
+then only allow it to link with certain programs.
+
+Feature request: List of valid people to kill who aren't in the room.
+

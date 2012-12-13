@@ -1,0 +1,513 @@
+rm -f glennbot.o channel.o datastruct.o util.o
+rm -f *~
+csc  -c glennbot.scm channel.scm datastruct.scm util.scm
+csc -o glennbot glennbot.o channel.o datastruct.o util.o 
+Starting anna....
+Made connection.
+Connected.
+Command added: ((#<procedure (parse-func c158)> . #<procedure (process-func c160)>))
+Command added: ((#<procedure (parse-func c150)> . #<procedure (process-func c152)>) (#<procedure (parse-func c158)> . #<procedure (process-func c160)>))
+Command added: ((#<procedure (parse-func c142)> . #<procedure (process-func c144)>) (#<procedure (parse-func c150)> . #<procedure (process-func c152)>) (#<procedure (parse-func c158)> . #<procedure (process-func c160)>))
+Joining: "#bottest"
+Channels defined.
+Handlers added
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "AUTH"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "NOTICE"
+    Code: bop
+    Index: 0
+    Param: ("AUTH" "*** Looking up your hostname...")
+    Body: ":irc.hwcommunity.com NOTICE AUTH :*** Looking up your hostname..."
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "AUTH"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "NOTICE"
+    Code: bop
+    Index: 1
+    Param: ("AUTH" "*** Couldn't resolve your hostname; using your IP address instead")
+    Body: ":irc.hwcommunity.com NOTICE AUTH :*** Couldn't resolve your hostname; using your IP address instead"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "001"
+    Code: bop
+    Index: 2
+    Param: ("Anna" "Welcome to the HWCommunity IRC Network Anna!nobody@24.166.186.197")
+    Body: ":irc.hwcommunity.com 001 Anna :Welcome to the HWCommunity IRC Network Anna!nobody@24.166.186.197"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "002"
+    Code: bop
+    Index: 3
+    Param: ("Anna" "Your host is irc.hwcommunity.com, running version Unreal3.2.3")
+    Body: ":irc.hwcommunity.com 002 Anna :Your host is irc.hwcommunity.com, running version Unreal3.2.3"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "003"
+    Code: bop
+    Index: 4
+    Param: ("Anna" "This server was created Sun Sep 25 2005 at 23:18:23 MDT")
+    Body: ":irc.hwcommunity.com 003 Anna :This server was created Sun Sep 25 2005 at 23:18:23 MDT"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "004"
+    Code: bop
+    Index: 5
+    Param: ("Anna" "irc.hwcommunity.com" "Unreal3.2.3" "iowghraAsORTVSxNCWqBzvdHtGp" "lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj")
+    Body: ":irc.hwcommunity.com 004 Anna irc.hwcommunity.com Unreal3.2.3 iowghraAsORTVSxNCWqBzvdHtGp lvhopsmntikrRcaqOALQbSeIKVfMCuzNTGj"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "005"
+    Code: bop
+    Index: 6
+    Param: ("Anna" "CMDS=KNOCK,MAP,DCCALLOW,USERIP" "SAFELIST" "HCN" "MAXCHANNELS=20" "CHANLIMIT=#" "20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 WALLCHOPS :are supported by this server")
+    Body: ":irc.hwcommunity.com 005 Anna CMDS=KNOCK,MAP,DCCALLOW,USERIP SAFELIST HCN MAXCHANNELS=20 CHANLIMIT=#:20 MAXLIST=b:60,e:60,I:60 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 MAXTARGETS=20 WALLCHOPS :are supported by this server"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "005"
+    Code: bop
+    Index: 7
+    Param: ("Anna" "WATCH=128" "SILENCE=15" "MODES=12" "CHANTYPES=#" "PREFIX=(qaohv)~&@%+" "CHANMODES=beI,kfL,lj,psmntirRcOAQKVGCuzNSMTG" "NETWORK=HWCommunity" "CASEMAPPING=ascii" "EXTBAN=~,cqnr" "ELIST=MNUCT" "STATUSMSG=~&@%+" "EXCEPTS" "INVEX" "are supported by this server")
+    Body: ":irc.hwcommunity.com 005 Anna WATCH=128 SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kfL,lj,psmntirRcOAQKVGCuzNSMTG NETWORK=HWCommunity CASEMAPPING=ascii EXTBAN=~,cqnr ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "251"
+    Code: bop
+    Index: 8
+    Param: ("Anna" "There are 5 users and 78 invisible on 2 servers")
+    Body: ":irc.hwcommunity.com 251 Anna :There are 5 users and 78 invisible on 2 servers"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "252"
+    Code: bop
+    Index: 9
+    Param: ("Anna" "7" "operator(s) online")
+    Body: ":irc.hwcommunity.com 252 Anna 7 :operator(s) online"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "254"
+    Code: bop
+    Index: 10
+    Param: ("Anna" "23" "channels formed")
+    Body: ":irc.hwcommunity.com 254 Anna 23 :channels formed"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "255"
+    Code: bop
+    Index: 11
+    Param: ("Anna" "I have 76 clients and 1 servers")
+    Body: ":irc.hwcommunity.com 255 Anna :I have 76 clients and 1 servers"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "265"
+    Code: bop
+    Index: 12
+    Param: ("Anna" "Current Local Users: 76  Max: 232")
+    Body: ":irc.hwcommunity.com 265 Anna :Current Local Users: 76  Max: 232"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "266"
+    Code: bop
+    Index: 13
+    Param: ("Anna" "Current Global Users: 83  Max: 115")
+    Body: ":irc.hwcommunity.com 266 Anna :Current Global Users: 83  Max: 115"
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "375"
+    Code: bop
+    Index: 14
+    Param: ("Anna" "- irc.hwcommunity.com Message of the Day - ")
+    Body: ":irc.hwcommunity.com 375 Anna :- irc.hwcommunity.com Message of the Day - "
+Message recieved.
+    Time: "Tue Dec  2 11:18:14 2008", timestamp 1228238294.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 15
+    Param: ("Anna" "- 17/10/2005 5:23")
+    Body: ":irc.hwcommunity.com 372 Anna :- 17/10/2005 5:23"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 16
+    Param: ("Anna" "- Welcome to the Homeworld Community IRC server.")
+    Body: ":irc.hwcommunity.com 372 Anna :- Welcome to the Homeworld Community IRC server."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 17
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 18
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 19
+    Param: ("Anna" "- Four simple rules:")
+    Body: ":irc.hwcommunity.com 372 Anna :- Four simple rules:"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 20
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 21
+    Param: ("Anna" "- 1. If an op in the channel you are in tells you to stop doing something, stop doi")
+    Body: ":irc.hwcommunity.com 372 Anna :- 1. If an op in the channel you are in tells you to stop doing something, stop doi"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 22
+    Param: ("Anna" "- ng it.")
+    Body: ":irc.hwcommunity.com 372 Anna :- ng it."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 23
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 24
+    Param: ("Anna" "- 2. No warez - this means no public discussion, linking, or trading of software or")
+    Body: ":irc.hwcommunity.com 372 Anna :- 2. No warez - this means no public discussion, linking, or trading of software or"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 25
+    Param: ("Anna" "-  intellectual property if you do not own a legitimate, legal copy. Warez traffick")
+    Body: ":irc.hwcommunity.com 372 Anna :-  intellectual property if you do not own a legitimate, legal copy. Warez traffick"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 26
+    Param: ("Anna" "- ing endangers this server's donated connection.")
+    Body: ":irc.hwcommunity.com 372 Anna :- ing endangers this server's donated connection."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 27
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 28
+    Param: ("Anna" "- 3. No porn - this means no open linking of adult material. While we're not prudes")
+    Body: ":irc.hwcommunity.com 372 Anna :- 3. No porn - this means no open linking of adult material. While we're not prudes"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 29
+    Param: ("Anna" "- , minors might be present, and we're not in the business of irritating parents.")
+    Body: ":irc.hwcommunity.com 372 Anna :- , minors might be present, and we're not in the business of irritating parents."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 30
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 31
+    Param: ("Anna" "- 4. Only server donors may own channels. Clans may have their own channel as long ")
+    Body: ":irc.hwcommunity.com 372 Anna :- 4. Only server donors may own channels. Clans may have their own channel as long "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 32
+    Param: ("Anna" "- as they state that it is a clan channel in the topic. All other channels must be ")
+    Body: ":irc.hwcommunity.com 372 Anna :- as they state that it is a clan channel in the topic. All other channels must be "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 33
+    Param: ("Anna" "- approved by the admins. ")
+    Body: ":irc.hwcommunity.com 372 Anna :- approved by the admins. "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 34
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 35
+    Param: ("Anna" "- Failure to abide by these rules will earn you the following:")
+    Body: ":irc.hwcommunity.com 372 Anna :- Failure to abide by these rules will earn you the following:"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 36
+    Param: ("Anna" "-     First offense will earn you a 1-day kline.")
+    Body: ":irc.hwcommunity.com 372 Anna :-     First offense will earn you a 1-day kline."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 37
+    Param: ("Anna" "-     Second offense will earn you a permanent k-line.")
+    Body: ":irc.hwcommunity.com 372 Anna :-     Second offense will earn you a permanent k-line."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 38
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 39
+    Param: ("Anna" "- If you wish to read more about the rules on this server (mostly concerning hostin")
+    Body: ":irc.hwcommunity.com 372 Anna :- If you wish to read more about the rules on this server (mostly concerning hostin"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 40
+    Param: ("Anna" "- g), please read http://hwcommunity.com/terms_and_conditions/")
+    Body: ":irc.hwcommunity.com 372 Anna :- g), please read http://hwcommunity.com/terms_and_conditions/"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 41
+    Param: ("Anna" "- ")
+    Body: ":irc.hwcommunity.com 372 Anna :- "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 42
+    Param: ("Anna" "- If you need assistance or have a problem, please join #help and speak with one of")
+    Body: ":irc.hwcommunity.com 372 Anna :- If you need assistance or have a problem, please join #help and speak with one of"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "372"
+    Code: bop
+    Index: 43
+    Param: ("Anna" "-  the IRCops.")
+    Body: ":irc.hwcommunity.com 372 Anna :-  the IRCops."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "376"
+    Code: bop
+    Index: 44
+    Param: ("Anna" "End of /MOTD command.")
+    Body: ":irc.hwcommunity.com 376 Anna :End of /MOTD command."
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "Anna"
+    Receiver: "Anna"
+    Prefix: ("Anna")
+    Command: "MODE"
+    Code: bop
+    Index: 45
+    Param: ("Anna" "+iwx")
+    Body: ":Anna MODE Anna :+iwx"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "Anna"
+    Receiver: "#bottest"
+    Prefix: ("Anna" "nobody" "34293885.5C70A949.4F8D5E34.IP")
+    Command: "JOIN"
+    Code: bop
+    Index: 46
+    Param: ("#bottest")
+    Body: ":Anna!nobody@34293885.5C70A949.4F8D5E34.IP JOIN :#bottest"
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "353"
+    Code: bop
+    Index: 47
+    Param: ("Anna" "=" "#bottest" "Anna @Icefox ")
+    Body: ":irc.hwcommunity.com 353 Anna = #bottest :Anna @Icefox "
+Message recieved.
+    Time: "Tue Dec  2 11:18:15 2008", timestamp 1228238295.0
+    Sender: "irc.hwcommunity.com"
+    Receiver: "Anna"
+    Prefix: ("irc.hwcommunity.com")
+    Command: "366"
+    Code: bop
+    Index: 48
+    Param: ("Anna" "#bottest" "End of /NAMES list.")
+    Body: ":irc.hwcommunity.com 366 Anna #bottest :End of /NAMES list."
+Message recieved.
+    Time: "Tue Dec  2 11:18:22 2008", timestamp 1228238302.0
+    Sender: "Icefox"
+    Receiver: "#bottest"
+    Prefix: ("Icefox" "weechat" "hwc-5CC93D75.kc.res.rr.com")
+    Command: "PRIVMSG"
+    Code: bop
+    Index: 49
+    Param: ("#bottest" "blar")
+    Body: ":Icefox!weechat@hwc-5CC93D75.kc.res.rr.com PRIVMSG #bottest :blar"
